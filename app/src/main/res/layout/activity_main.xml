@@ -13,4 +13,9 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5613B688"/>
+
 </LinearLayout>
