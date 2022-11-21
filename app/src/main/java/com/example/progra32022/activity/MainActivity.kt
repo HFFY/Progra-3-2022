@@ -15,4 +15,8 @@ class MainActivity : AppCompatActivity() {
         textView = findViewById(R.id.text_title)
         textView.text = "Hola Mundo"
     }
+
+    fun newFun(){
+        print("Hola")
+    }
 }
