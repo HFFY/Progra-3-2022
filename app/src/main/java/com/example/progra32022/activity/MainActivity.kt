@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.progra32022.R
+import com.example.progra32022.dataClasses.Restaurante
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +17,16 @@ class MainActivity : AppCompatActivity() {
         textView.text = "Hola Mundo"
     }
 
-    fun newFun(){
-        print("Hola")
+    fun abiertos(listRestaurante: List<Restaurante>): List<Restaurante>{
+        val abiertos = mutableListOf<Restaurante>()
+        listRestaurante.forEach { restaurante ->
+            if (restaurante.abierto)
+                abiertos.add(restaurante)
+        }
+        return abiertos
+    }
+
+    fun abiertos2(listRestaurante: List<Restaurante>): List<Restaurante>{
+        return listRestaurante.filter { it.abierto }
     }
 }
