@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Progra-3-2022</string>
+
+    <string name="hello_world">Hola mundo</string>
+    <string name="numero_numbner">Número</string>
+    <string name="ejemplo_parrafo">hols estudiantes de progra 3 <b> viva god of war</b></string>
+    <string name="new_number">Nuevo Número</string>
+    <string name="save">guardar</string>
+    <string name="activity_change">Cambio de Activity</string>
 </resources>

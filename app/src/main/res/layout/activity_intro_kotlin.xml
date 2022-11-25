@@ -7,4 +7,17 @@
     android:orientation="vertical"
     tools:context=".activity.IntroKotlinActivity">
 
+    <TextView
+        android:id="@+id/text_message"
+        style="@style/TextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xvsdfsdfsdf"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vamoacalmarno"
+        android:visibility="gone"/>
+
 </LinearLayout>

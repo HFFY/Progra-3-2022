@@ -2,21 +2,29 @@ package com.example.progra32022.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import com.example.progra32022.R
+import com.example.progra32022.activity.MainActivity.Companion.MESSAGE
 import com.example.progra32022.dataClasses.Estudiante
 import com.example.progra32022.dataClasses.Persona
 import com.example.progra32022.dataClasses.nombreCompleto
+import com.example.progra32022.databinding.ActivityIntroKotlinBinding
 
 class IntroKotlinActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityIntroKotlinBinding
+
     // Esta es nuestra Activity donde vimos la introducción a la materia
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityIntroKotlinBinding.inflate(layoutInflater)
+        val view = binding.root
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_intro_kotlin)
-
+        setContentView(view)
+        val message: String = intent.getStringExtra(MESSAGE).orEmpty()
+        binding.textMessage.text = message
         //Ejemplo de for iterando un String
-        for(i in "Hola Mundo")
-            print(i)
+//        for(i in "Hola Mundo")
+//            print(i)
     }
 
     fun diaUno(){

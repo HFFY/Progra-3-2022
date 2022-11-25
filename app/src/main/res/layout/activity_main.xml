@@ -8,15 +8,51 @@
     android:gravity="center"
     tools:context=".activity.MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5613B688"
+        android:layout_margin="15dp"/>
+
     <TextView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="@string/ejemplo_parrafo"
+        android:textSize="16sp"
+        android:background="@color/my_color"
+        android:textColor="@color/white"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_number"
+        android:maxLength="15"
+        android:layout_margin="15dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/save"
+        android:layout_margin="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
 
     <View
         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5613B688"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/button_activity_change"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#5613B688"/>
+        android:text="@string/activity_change"
+        android:layout_margin="16dp"/>
 
 </LinearLayout>
