@@ -7,4 +7,8 @@
     <string name="new_number">Nuevo Número</string>
     <string name="save">guardar</string>
     <string name="activity_change">Cambio de Activity</string>
+    <string name="this_is_a_vertical">This is a vertical</string>
+    <string name="linear_layout_example">Linear Layout example</string>
+    <string name="and_this">And this</string>
+    <string name="this_is_a_horizontal">This is a horizontal</string>
 </resources>

@@ -29,15 +29,12 @@ class MainActivity : AppCompatActivity() {
         val text0 = getString(R.string.activity_change)
         val text: String = binding.textTitle.text.toString()
 
-        binding.buttonActivityChange.setOnClickListener {
+        binding.buttonSave.setOnClickListener {
             changeText()
         }
 
-        binding.buttonSave.setOnClickListener {
-            val intent = Intent(this, IntroKotlinActivity::class.java)
-            intent.apply {
-                putExtra(MESSAGE, "Hola como estas")
-            }
+        binding.buttonActivityChange.setOnClickListener {
+            val intent = Intent(this, LinearHomeworkActivity::class.java)
             startActivity(intent)
         }
     }
