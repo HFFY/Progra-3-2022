@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +9,11 @@
     tools:context=".activity.MainActivity">
 
     <View
+        android:id="@+id/view_one"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#5613B688"
-        android:layout_margin="15dp"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/text_title"
@@ -22,6 +23,10 @@
         android:textSize="16sp"
         android:background="@color/my_color"
         android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
         android:padding="15dp"/>
 
     <EditText
@@ -30,6 +35,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/new_number"
         android:maxLength="15"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
         android:layout_margin="15dp"
         android:inputType="number"/>
 
@@ -40,12 +46,15 @@
         android:text="@string/save"
         android:layout_margin="15dp"
         android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_number"
         android:backgroundTint="@color/black"/>
 
     <View
+        android:id="@+id/view_two"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#5613B688"
+        app:layout_constraintTop_toBottomOf="@+id/button_save"
         android:layout_margin="15dp"/>
 
     <Button
@@ -53,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/activity_change"
+        app:layout_constraintTop_toBottomOf="@+id/view_two"
         android:layout_margin="16dp"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

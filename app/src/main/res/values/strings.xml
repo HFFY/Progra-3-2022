@@ -11,4 +11,10 @@
     <string name="linear_layout_example">Linear Layout example</string>
     <string name="and_this">And this</string>
     <string name="this_is_a_horizontal">This is a horizontal</string>
+    <string name="name">Nombre:</string>
+    <string name="dev_name">Hugo Fabian Flores Yañez</string>
+    <string name="degree">Posición:</string>
+    <string name="programing_teacher">Docente de Progra 3</string>
+    <string name="hobie">Hobie:</string>
+    <string name="hobie_description">Pokemon Trainer</string>
 </resources>
