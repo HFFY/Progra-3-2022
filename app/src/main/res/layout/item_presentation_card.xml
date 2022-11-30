@@ -1,88 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.PresentationCardActivity">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="15dp"
-        app:cardCornerRadius="10dp"
         app:layout_constraintDimensionRatio="2:1"
-        app:layout_constraintTop_toTopOf="parent">
+        app:cardCornerRadius="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/illimani" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#6F070707" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.5" />
-
             <TextView
                 android:id="@+id/text_view_name_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/name"
-                android:textColor="@color/white"
                 android:textSize="12sp"
+                android:text="@string/name"
+                android:layout_marginBottom="4dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_name"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/text_view_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginBottom="12dp"
-                android:text="@string/dev_name"
-                android:textColor="@color/white"
                 android:textSize="16sp"
+                android:text="@string/dev_name"
+                android:layout_marginBottom="12dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_degree_title"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/text_view_degree_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/degree"
-                android:textColor="@color/white"
                 android:textSize="12sp"
+                android:text="@string/degree"
+                android:layout_marginBottom="4dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_degree"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/text_view_degree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/programing_teacher"
+                android:textSize="16sp"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/programing_teacher"
-                android:textColor="@color/white"
-                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/text_hobbie_title"
@@ -90,43 +74,53 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="4dp"
-                android:text="@string/hobie"
-                android:textColor="@color/white"
-                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_hobie"
-                app:layout_constraintStart_toStartOf="@+id/guideline" />
+                android:textSize="12sp"
+                android:text="@string/hobie"
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/text_view_hobie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/hobie_description"
+                android:textSize="16sp"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/hobie_description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline" />
+                android:elevation="3dp"
+                android:textColor="@color/white"/>
 
-            <androidx.constraintlayout.widget.Group
-                android:id="@+id/group_hobie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:constraint_referenced_ids="text_view_hobie,text_hobbie_title"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6F070707"
+                android:elevation="2dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/illimani"
+                android:scaleType="centerCrop"
+                android:elevation="1dp"/>
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 android:layout_margin="16dp"
                 app:cardCornerRadius="50dp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:elevation="3dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/profile"/>
 
             </androidx.cardview.widget.CardView>
 

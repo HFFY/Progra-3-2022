@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonActivityChange.setOnClickListener {
-            val intent = Intent(this, LinearHomeworkActivity::class.java)
+            val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
     }
