@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonActivityChange.setOnClickListener {
-            val intent = Intent(this, EjercicioExamenActivity::class.java)
+            val intent = Intent(this, PresentationCardActivity::class.java)
             startActivity(intent)
         }
     }

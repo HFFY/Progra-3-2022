@@ -19,10 +19,11 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/image_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/illimani" />
+                tools:src="@drawable/illimani" />
 
             <View
                 android:layout_width="match_parent"

@@ -16,6 +16,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/illimani"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6F070707"/>
+
             <TextView
                 android:id="@+id/text_view_name_title"
                 android:layout_width="wrap_content"
@@ -26,7 +37,6 @@
                 android:layout_marginHorizontal="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_name"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -39,7 +49,6 @@
                 android:layout_marginHorizontal="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_degree_title"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -52,7 +61,6 @@
                 android:layout_marginHorizontal="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/text_view_degree"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -65,7 +73,6 @@
                 android:layout_marginBottom="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -78,7 +85,6 @@
                 app:layout_constraintBottom_toTopOf="@+id/text_view_hobie"
                 android:textSize="12sp"
                 android:text="@string/hobie"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -91,21 +97,7 @@
                 android:layout_marginBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:elevation="3dp"
                 android:textColor="@color/white"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#6F070707"
-                android:elevation="2dp"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/illimani"
-                android:scaleType="centerCrop"
-                android:elevation="1dp"/>
 
 
             <androidx.cardview.widget.CardView
@@ -114,8 +106,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:layout_margin="16dp"
-                app:cardCornerRadius="50dp"
-                android:elevation="3dp">
+                app:cardCornerRadius="50dp">
 
                 <ImageView
                     android:layout_width="match_parent"
