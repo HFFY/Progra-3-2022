@@ -17,4 +17,6 @@
     <string name="programing_teacher">Docente de Progra 3</string>
     <string name="hobie">Hobie:</string>
     <string name="hobie_description">Pokemon Trainer</string>
+    <string name="test_string">Este es un ejercicio de examen</string>
+    <string name="exam">Examen</string>
 </resources>
