@@ -14,6 +14,9 @@ class PresentationCardActivity : AppCompatActivity() {
         binding = ActivityPresentationCardBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        Glide.with(this).load("https://efeverde.com/wp-content/uploads/2022/01/Illimani.jpg").into(binding.imageBackground)
+        Glide
+            .with(this)
+            .load("https://efeverde.com/wp-content/uploads/2022/01/Illimani.jpg")
+            .into(binding.imageBackground)
     }
 }
