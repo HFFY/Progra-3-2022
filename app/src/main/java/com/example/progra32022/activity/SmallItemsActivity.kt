@@ -1,6 +1,9 @@
 package com.example.progra32022.activity
 
+import android.app.Dialog
 import android.content.SharedPreferences
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,10 +13,12 @@ import android.widget.Toast
 import androidx.preference.PreferenceManager
 import com.example.progra32022.R
 import com.example.progra32022.databinding.ActivitySmallItemsBinding
+import com.example.progra32022.databinding.ItemPopupMessageBinding
 
 class SmallItemsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySmallItemsBinding
+    private lateinit var bindingPopup: ItemPopupMessageBinding
     private lateinit var preference: SharedPreferences
     var spinnerSelected = ""
     var radioSelected = ""
@@ -24,6 +29,10 @@ class SmallItemsActivity : AppCompatActivity() {
         setContentView(binding.root)
         initSpinner()
         managePreferences()
+
+        binding.buttonShowPopup.setOnClickListener {
+            managePopup()
+        }
     }
 
     fun initSpinner(){
@@ -55,15 +64,6 @@ class SmallItemsActivity : AppCompatActivity() {
         }
     }
 
-    fun manageRadioButtons(){
-        binding.run {
-            radioButtonOne.setOnClickListener {
-                if (radioButtonOne.isChecked)
-                    Toast.makeText(this@SmallItemsActivity,"Seleccionaste algo", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
     fun managePreferences(){
         val id = "Nuestro_ID"
         preference = PreferenceManager.getDefaultSharedPreferences(this)
@@ -87,5 +87,21 @@ class SmallItemsActivity : AppCompatActivity() {
             editor.remove(id)
             editor.apply()
         }
+    }
+
+    fun managePopup(){
+        bindingPopup = ItemPopupMessageBinding.inflate(layoutInflater)
+        val dialog = Dialog(this)
+        dialog.setContentView(bindingPopup.root)
+        dialog.setCancelable(true)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        bindingPopup.textTitle.text = "Hola"
+
+        dialog.show()
+        bindingPopup.buttonPopup.setOnClickListener {
+            dialog.dismiss()
+        }
+
     }
 }

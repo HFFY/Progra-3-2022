@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="12sp"
             android:text="@string/a_de_am_n"/>
 
         <RadioButton
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="12sp"
             android:text="@string/b_de_biblia"/>
 
         <RadioButton
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="12sp"
             android:text="@string/c_de_cristo"/>
 
         <RadioButton
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="17sp"
+            android:textSize="12sp"
             android:text="@string/d_de_diosito"/>
 
     </RadioGroup>
@@ -95,5 +95,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/delete"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="30"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/button_show_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_popup"/>
+
 
 </LinearLayout>

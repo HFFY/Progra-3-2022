@@ -27,4 +27,7 @@
     <string name="include_data">Incluir los datos del Spinner</string>
     <string name="delete">Eliminar</string>
     <string name="show">mostrar</string>
+    <string name="show_popup">mostrar popup</string>
+    <string name="accept">aceptar</string>
+    <string name="popup_example">Este es un ejemplo de popup</string>
 </resources>

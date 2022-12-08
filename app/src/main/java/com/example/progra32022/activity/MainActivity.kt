@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.progra32022.R
+import com.example.progra32022.dataClasses.Estudiante
 import com.example.progra32022.dataClasses.Restaurante
 import com.example.progra32022.databinding.ActivityMainBinding
 
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object{
         val MESSAGE: String = "new_message"
+        val ESTUDIANTE: String = "Estudiante"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +35,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonActivityChange.setOnClickListener {
-            val intent = Intent(this, SmallItemsActivity::class.java)
+//            val estudiante = Estudiante(
+//                "Nombre",
+//                null,
+//                "Apellido P",
+//                "Apellido M",
+//                "10/10/2000",
+//                22,
+//                "333333"
+//            )
+            val intent = Intent(this, JsonExampleActivity::class.java)
+//            intent.putExtra(ESTUDIANTE,estudiante)
             startActivity(intent)
         }
     }
