@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.SmallItemsActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_stroke"
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/text_view_selected_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/container_shape_dark"
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="@string/a_de_am_n"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="@string/b_de_biblia"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="@string/c_de_cristo"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="@string/d_de_diosito"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/include_data"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+
+    <Button
+        android:id="@+id/button_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show"/>
+
+    <TextView
+        android:id="@+id/text_saved_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/saved_data"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"/>
+
+</LinearLayout>

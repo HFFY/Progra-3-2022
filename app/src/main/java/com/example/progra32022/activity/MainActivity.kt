@@ -3,10 +3,6 @@ package com.example.progra32022.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.example.progra32022.R
 import com.example.progra32022.dataClasses.Restaurante
 import com.example.progra32022.databinding.ActivityMainBinding
@@ -29,12 +25,15 @@ class MainActivity : AppCompatActivity() {
         val text0 = getString(R.string.activity_change)
         val text: String = binding.textTitle.text.toString()
 
+        binding.textViewSetText.text = getText(R.string.ejemplo_parrafo)
+        binding.imageSetImage.setImageResource(R.drawable.ic_canon)
+
         binding.buttonSave.setOnClickListener {
             changeText()
         }
 
         binding.buttonActivityChange.setOnClickListener {
-            val intent = Intent(this, PresentationCardActivity::class.java)
+            val intent = Intent(this, SmallItemsActivity::class.java)
             startActivity(intent)
         }
     }

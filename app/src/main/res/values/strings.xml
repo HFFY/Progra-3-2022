@@ -3,7 +3,7 @@
 
     <string name="hello_world">Hola mundo</string>
     <string name="numero_numbner">Número</string>
-    <string name="ejemplo_parrafo">hols estudiantes de progra 3 <b> viva god of war</b></string>
+    <string name="ejemplo_parrafo">hola estudiantes de progra 3 \n<b> este es un ejemplo de parrafo</b></string>
     <string name="new_number">Nuevo Número</string>
     <string name="save">guardar</string>
     <string name="activity_change">Cambio de Activity</string>
@@ -19,4 +19,12 @@
     <string name="hobie_description">Pokemon Trainer</string>
     <string name="test_string">Este es un ejercicio de examen</string>
     <string name="exam">Examen</string>
+    <string name="saved_data">El dato guardado es:</string>
+    <string name="d_de_diosito">D de Diosito</string>
+    <string name="c_de_cristo">C de Cristo</string>
+    <string name="b_de_biblia">B de Biblia</string>
+    <string name="a_de_am_n">A de Amén</string>
+    <string name="include_data">Incluir los datos del Spinner</string>
+    <string name="delete">Eliminar</string>
+    <string name="show">mostrar</string>
 </resources>
