@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 22,
                 "333333"
             )
-            val intent = Intent(this, SmallItemsActivity::class.java)
+            val intent = Intent(this, MapActivity::class.java)
 //            intent.putExtra(ESTUDIANTE,estudiante)
             startActivity(intent)
         }
