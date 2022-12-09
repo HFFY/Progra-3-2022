@@ -51,4 +51,5 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
 }
