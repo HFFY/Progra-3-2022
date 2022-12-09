@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/drawable_stroke"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/basic_margin"
         android:padding="10dp"/>
 
     <TextView
@@ -88,6 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:fontFamily="@font/arvo"
         android:text="@string/saved_data"/>
 
     <Button
@@ -97,16 +98,16 @@
         android:text="@string/delete"/>
 
     <ProgressBar
+        android:id="@+id/progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:progress="30"
-        android:max="100"/>
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     <Button
         android:id="@+id/button_show_popup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/arvo"
         android:text="@string/show_popup"/>
 
 

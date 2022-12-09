@@ -35,16 +35,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonActivityChange.setOnClickListener {
-//            val estudiante = Estudiante(
-//                "Nombre",
-//                null,
-//                "Apellido P",
-//                "Apellido M",
-//                "10/10/2000",
-//                22,
-//                "333333"
-//            )
-            val intent = Intent(this, JsonExampleActivity::class.java)
+            val estudiante = Estudiante(
+                "Nombre",
+                null,
+                "Apellido P",
+                "Apellido M",
+                "10/10/2000",
+                22,
+                "333333"
+            )
+            val intent = Intent(this, SmallItemsActivity::class.java)
 //            intent.putExtra(ESTUDIANTE,estudiante)
             startActivity(intent)
         }

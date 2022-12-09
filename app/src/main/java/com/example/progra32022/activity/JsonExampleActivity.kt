@@ -18,16 +18,7 @@ class JsonExampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityJsonExampleBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        estudiante = Estudiante(
-                "Nombre",
-        null,
-        "Apellido P",
-        "Apellido M",
-        "10/10/2000",
-        22,
-        "333333"
-        )
-//        estudiante = intent.getSerializableExtra(ESTUDIANTE) as Estudiante
+        estudiante = intent.getSerializableExtra(ESTUDIANTE) as Estudiante
         manageJson()
     }
 

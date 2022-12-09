@@ -8,7 +8,7 @@ data class Estudiante(
     val fechaNacimiento: String,
     var edad: Int,
     val codigo: String
-)
+): java.io.Serializable
 
 fun Estudiante.nombreCompleto(): String {
     return "${this.primerNombre} ${this.segundoNombre ?: ""} ${this.apellidoPaterno} ${this.apellidoMaterno}"

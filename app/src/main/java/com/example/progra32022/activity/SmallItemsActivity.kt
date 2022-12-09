@@ -33,6 +33,9 @@ class SmallItemsActivity : AppCompatActivity() {
         binding.buttonShowPopup.setOnClickListener {
             managePopup()
         }
+
+        binding.progress.max = 100
+        binding.progress.progress = 70
     }
 
     fun initSpinner(){
