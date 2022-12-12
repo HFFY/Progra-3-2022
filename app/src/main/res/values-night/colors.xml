@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="my_color">#221E1E</color>
+
+    <color name="rosewood">#4F000B</color>
+    <color name="claret">#720026</color>
+    <color name="brick_red">#CE4257</color>
+    <color name="coral">#FF7F51</color>
+    <color name="sandy_brown">#FF9B54</color>
 </resources>

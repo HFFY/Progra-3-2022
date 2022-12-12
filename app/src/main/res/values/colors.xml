@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="my_color">#FBD100</color>
+
+    <color name="rosewood">#4F000B</color>
+    <color name="claret">#720026</color>
+    <color name="brick_red">#CE4257</color>
+    <color name="coral">#FF7F51</color>
+    <color name="sandy_brown">#FF9B54</color>
 </resources>

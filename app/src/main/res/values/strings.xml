@@ -30,6 +30,10 @@
     <string name="show_popup">mostrar popup</string>
     <string name="accept">aceptar</string>
     <string name="popup_example">Este es un ejemplo de popup</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mail">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="login">login</string>
+    <string name="signup">Registrarse</string>
+    <string name="continuar">Continuar</string>
 </resources>
